@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap");
+* {
+  font-family: "Red Hat Text", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(234deg, 17%, 12%);
+  overflow: hidden;
+}
+body img.hill {
+  position: absolute;
+  width: 100vw;
+  bottom: 0;
+  z-index: -2;
+}
+body img.star {
+  position: absolute;
+  z-index: -5;
+}
+body .container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100vh;
+}
+body .container h1 {
+  color: hsl(0deg, 0%, 100%);
+  text-transform: uppercase;
+}
+body .container .cont {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .container .cont .up-con {
+  width: 100px;
+  height: 50px;
+  margin: 0 5px;
+  background-color: hsl(235deg, 16%, 14%);
+  border-radius: 10px;
+}
+body .container .cont .do-con {
+  width: 100px;
+  height: 50px;
+  margin: 0 5px;
+  background-color: hsl(236deg, 21%, 26%);
+  border-radius: 10px;
+  z-index: 5;
+}
+body .container .cont .num {
+  color: hsl(345deg, 95%, 68%);
+  position: relative;
+  font-size: 50px;
+  bottom: 83px;
+  left: 20px;
+}
+body .container .cont .day {
+  color: hsl(237deg, 18%, 59%);
+  position: relative;
+  bottom: 50px;
+  left: 30px;
+}
+body .container .socia {
+  font-size: 30px;
+}
+body .container .socia i {
+  margin: 0 20px;
+  color: hsl(237deg, 18%, 59%);
+}
+
+@media (max-width: 375px) {
+  .container h1 {
+    width: 300px;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .container .cont .up-con,
+.container .cont .do-con {
+    width: 85px;
+  }
+
+  .num {
+    font-size: 45px;
+  }
+}

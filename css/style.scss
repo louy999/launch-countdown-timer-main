@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap");
+@import "./color";
+* {
+  font-family: "Red Hat Text", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+//body style
+body {
+  background-color: $Very-dark-mostly-black-blue;
+  overflow: hidden;
+
+  //style img and color body
+  img.hill {
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+    z-index: -2;
+  }
+  img.star {
+    position: absolute;
+    z-index: -5;
+  }
+
+  // style contatiner
+
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+
+    // style h1
+
+    h1 {
+      color: $White;
+      text-transform: uppercase;
+    }
+
+    //style cont
+
+    .cont {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      //root cont up
+      .up-con {
+        width: 100px;
+        height: 50px;
+        margin: 0 5px;
+        background-color: $Very-dark-blue;
+        // position: relative;
+        border-radius: 10px;
+      }
+
+      //root cont down
+      .do-con {
+        width: 100px;
+        height: 50px;
+        margin: 0 5px;
+        background-color: $Dark-desaturated-blue;
+        border-radius: 10px;
+        z-index: 5;
+      }
+
+      //root style number
+      .num {
+        color: $Soft-red;
+        position: relative;
+        font-size: 50px;
+        bottom: 83px;
+        left: 20px;
+      }
+      //root style day
+      .day {
+        color: $Grayish-blue;
+        position: relative;
+        bottom: 50px;
+        left: 30px;
+      }
+    }
+
+    // style social icon
+    .socia {
+      font-size: 30px;
+      i {
+        margin: 0 20px;
+        color: $Grayish-blue;
+      }
+    }
+  }
+}
+//media
+@media (max-width: 375px) {
+  .container h1 {
+    width: 300px;
+    font-size: 25px;
+    text-align: center;
+  }
+  .container .cont .up-con,
+  .container .cont .do-con {
+    width: 85px;
+  }
+  .num {
+    font-size: 45px;
+  }
+}
