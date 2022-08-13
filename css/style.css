@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap");
 * {
   font-family: "Red Hat Text", sans-serif;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -23,17 +22,10 @@ body img.star {
 }
 body .container {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   height: 100vh;
 }
 body .container h1 {
@@ -42,12 +34,8 @@ body .container h1 {
 }
 body .container .cont {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 body .container .cont .up-con {
   width: 100px;
@@ -83,6 +71,10 @@ body .container .socia {
 body .container .socia i {
   margin: 0 20px;
   color: hsl(237deg, 18%, 59%);
+  cursor: pointer;
+}
+body .container .socia i:hover {
+  color: hsl(345deg, 95%, 68%);
 }
 
 @media (max-width: 375px) {
@@ -91,13 +83,11 @@ body .container .socia i {
     font-size: 25px;
     text-align: center;
   }
-
   .container .cont .up-con,
 .container .cont .do-con {
     width: 85px;
   }
-
   .num {
     font-size: 45px;
   }
-}
+}/*# sourceMappingURL=style.css.map */

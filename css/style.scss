@@ -90,6 +90,10 @@ body {
       i {
         margin: 0 20px;
         color: $Grayish-blue;
+        cursor: pointer;
+        &:hover {
+          color: $Soft-red;
+        }
       }
     }
   }
